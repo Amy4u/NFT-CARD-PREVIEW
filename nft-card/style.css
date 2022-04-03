@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: 'Outfit', sans-serif;
+	cursor: context-menu;
+	
+}
+
+body{
+	width: 100%; height: 100%;	
+	background-color: hsl(217, 54%, 11%);
+}
+
+/* .header{
+	/* width: 100%; height: 100%;					/an error occured/
+	background-color: hsl(217, 54%, 11%);
+} */
+
+.nft-card{
+	width: 280px; height: auto;
+	padding: 15px;
+	margin: 100px auto;
+	position: relative;
+	border-radius: 10px;
+	background-color: hsl(216, 50%, 16%);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.781), 0 0 40px #011631e3, 0 0 60px #011631b0;
+}
+
+.image-equilibrium{
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.main-img{
+	width: 100%;
+	position: relative;
+}
+
+.main-img::after{
+	content: "";
+	width:100%; height: 100%;
+	background-color:hsl(178, 100%, 50%);
+	border-radius: 5px;
+	cursor: pointer;
+	position: absolute;
+	top: 0; left: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.nft-card:hover .main-img::after{
+	opacity: 0.5;
+}
+
+.eye-img{
+	color: white;
+	font-size: x-large;
+	position: absolute;
+	top: 0; left:0;
+	margin: 45%;
+	display: none;
+	z-index: 1;
+	transition: 2s;
+}
+
+.nft-card:hover .eye-img{
+	display: block;
+}
+
+.content h2{
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin: 15px 0;
+}
+
+.content p{
+	margin: 15px 0;
+	font-size: 14px;
+	color:  hsla(215, 52%, 70%, 0.705);
+	font-weight: 600;
+}
+
+
+.eth-value-time{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 10px;
+		color:  hsl(178, 100%, 50%);
+}
+
+.eth-value h3{
+	cursor: pointer;
+}
+
+
+.time-left{
+	color: hsla(215, 52%, 70%, 0.705);
+}
+
+.content{
+	border-bottom: 2px solid hsl(217, 33%, 22%);
+	padding-bottom: 15px;
+}
+
+.footer .image-avatar{
+	width: 28px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px  solid hsl(0, 0%, 100%);
+}
+
+.footer{
+	display: flex;
+	align-items: center;
+	padding-top: 15px;
+}
+
+.footer p{
+	font-size: 12px;
+	font-weight: bolder;
+	margin-left: 20px;
+	color: hsla(215, 52%, 70%, 0.705);
+	letter-spacing: 1px;
+}
+
+span{
+	color: hsl(0, 0%, 100%);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.nft-card:hover span{
+	color:hsl(178, 100%, 50%);
+}
